@@ -41,7 +41,7 @@ const Main: React.FC = () => {
       formData.append("model", file);
 
       const { data } = await axios.post(
-        "http://127.0.0.1:5000/compress_model",
+        "https://api.neurox-ai.tech/compress_model",
         formData,
         {
           headers: {
