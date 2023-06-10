@@ -41,7 +41,7 @@ const Main: React.FC = () => {
       formData.append("model", file);
 
       const { data } = await axios.post(
-        "http://34.125.121.29:3003/compress_model",
+        "http://34.125.121.29:3003/compress_model/",
         formData,
         {
           headers: {
